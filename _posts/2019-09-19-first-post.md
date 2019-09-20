@@ -1,7 +1,10 @@
 ---
-title: "Test Toast"
-date: 2019-09-19 08:26:28 -0400
-categories: Freeboard
+layout: single
+title: "190919"
+categories: Dairy
 ---
 
-Test
+**I made a new [blog](https://yonseijaewon.github.io).** Now I can record my daily life and also learn Markdown grammar.  
+**These days, I'm practicing R.** [Shiny](https://shiny.rstudio.com) seems to be helpful in data engineering class.  
+**I also solved several algorithm problems.** It's been a long time since the last year algorithm class.  
+**I finished working on a capstone software design project research proposal. **
