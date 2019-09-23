@@ -116,7 +116,7 @@ $$
 
 - Classification의 Loss 함수가 KL Divergence가 아닌 Cross Entropy인 이유는 다음과 같다.
   - $p$를 근사하기 위해 $q$를 만든 것.
-  - $q$의 파라미터로 미분하면 $H(q)$가 사라진다.
+  - $q$의 파라미터로 미분하면 $H(p)$가 사라진다.
   - 따라서 $H(p,q)$를 Loss 함수로 쓰고, 사실상 KL Divergence를 쓰는 것과 같다.
 
 
