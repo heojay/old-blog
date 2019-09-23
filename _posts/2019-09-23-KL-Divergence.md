@@ -67,10 +67,7 @@ use_math: true
 
   
 
-- 이를 **KL Divergence**라고 한다.
-
-
-
+- 이를 **KL Divergence**라고 한다.  
 - $KL(p|q) \ne KL(q|p)$
 - $KL(p|q)\ge0$ ($p=q$ 일 때 0 만족)
 
