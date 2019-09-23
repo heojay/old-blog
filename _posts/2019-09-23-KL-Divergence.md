@@ -2,6 +2,7 @@
 title: "KL Divergence 정리"
 date: 2019-09-23 08:26:28 -0400
 categories: study
+use_math: true
 ---
 
 # KL Divergence
