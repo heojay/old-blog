@@ -93,9 +93,9 @@ $$
 
 
 
-- $KL(p|q) \ne KL(q|p)$
+- $KL(p\|q)\ne KL(q\|p)$
 
-- $KL(p|q)\ge0$ ($p=q$ 일 때 0 만족)
+- $KL(p\|q)\ge0$ ($p=q$ 일 때 0 만족)
 
   
 $$
