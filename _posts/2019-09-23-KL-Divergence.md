@@ -32,6 +32,7 @@ use_math: true
 - 따라서 첫번째 조건과 결합하면 이러한 함수의 형태는 $-log$ 형태이다.
 
   
+  
   $$
   h(x)=-log_{2}p(x)
   $$
@@ -39,31 +40,23 @@ use_math: true
 
 
 
-- 평균적인 정보량은 확률 * 정보량, 즉 기대값이다. 이 값을 **엔트로피**라고 한다.
-<<<<<<< HEAD
-  
-  
-=======
+- 평균적인 정보량은 확률 * 정보량, 즉 기대값이다. 이 값을 **엔트로피**라고 한다. 
 
->>>>>>> 51cdf58d70304a2534108aa0555d0af75f45c28b
-  $$
+
+
+$$
 H[X]=-\sum_x p(x)log_2p(x)=E_p[-log_2p(x)]
-  $$
-  
-  
-  
-  
+$$
+
+
+
 - Continuous한 경우는 다음과 같다.
 
-<<<<<<< HEAD
   
-  $$
-=======
- $$
->>>>>>> 51cdf58d70304a2534108aa0555d0af75f45c28b
-  H[x] = \lim_{\Delta\to0}{\{\sum_ip(x_i)\Delta \ln p(x_i)\}}=-\int p(x)\ln p(x) dx
-  $$
-  
+
+$$
+H[x] = \lim_{\Delta\to0}{\{\sum_ip(x_i)\Delta \ln p(x_i)\}}=-\int p(x)\ln p(x) dx
+$$
 
 
 
@@ -81,40 +74,39 @@ H[X]=-\sum_x p(x)log_2p(x)=E_p[-log_2p(x)]
 
 - 실제 확률분포와 모델링한 확률분포에 차이가 생기면, 그에 따라 추가 비용이 발생하는데, 이를 이를 **KL Divergence**라고 한다. Discrete의 경우 다음과 같다.
 
-<<<<<<< HEAD
-  
-  $$
-=======
- $$
->>>>>>> 51cdf58d70304a2534108aa0555d0af75f45c28b
-  -(\sum_xp(x)log_2q(x))-(\sum_xp(x)log_2p(x)) = -\sum_xp(x)log_2\frac{q(x)}{p(x)}
-  $$
-  
+
+
+$$
+-(\sum_xp(x)log_2q(x))-(\sum_xp(x)log_2p(x)) = -\sum_xp(x)log_2\frac{q(x)}{p(x)}
+$$
+
+
 
 - Continuous의 경우 다음과 같다.
 
-<<<<<<< HEAD
-  
-  $$
-  -\int p(x)\ln \frac{q(x)}{p(x)} dx
-  $$
+
+
+$$
+-\int p(x)\ln \frac{q(x)}{p(x)} dx
+$$
 
 
 
 
 - $KL(p|q) \ne KL(q|p)$
+
 - $KL(p|q)\ge0$ ($p=q$ 일 때 0 만족)
-=======
- $$
-  -\int p(x)\ln \frac{q(x)}{p(x)} dx
-  $$
+
+  
+$$
+-\int p(x)\ln \frac{q(x)}{p(x)} dx
+$$
 
   
 
 - 이를 **KL Divergence**라고 한다.  
 - $KL(p\|q) \ne KL(q\|p)$
 - $KL(p\|q)\ge0$ ($p=q$ 일 때 0 만족)
->>>>>>> 51cdf58d70304a2534108aa0555d0af75f45c28b
 
 
 
