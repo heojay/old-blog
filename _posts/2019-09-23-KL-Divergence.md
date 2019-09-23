@@ -31,13 +31,14 @@ use_math: true
 
 
 - 평균적인 정보량은 확률 * 정보량, 즉 기대값이다. 이 값을 **엔트로피**라고 한다.
+
   $$
   H[X]=-\sum_x p(x)log_2p(x)=E_p[-log_2p(x)]
   $$
 
 - Continuous한 경우는 다음과 같다.
 
-- $$
+ $$
   H[x] = \lim_{\Delta\to0}{\{\sum_ip(x_i)\Delta \ln p(x_i)\}}=-\int p(x)\ln p(x) dx
   $$
 
@@ -55,21 +56,21 @@ use_math: true
 
 - 실제 확률분포와 모델링한 확률분포에 차이가 생기면, 그에 따라 추가 비용이 발생하고, 이는 Discrete의 경우 다음과 같다.
 
-- $$
+ $$
   -(\sum_xp(x)log_2q(x))-(\sum_xp(x)log_2p(x)) = -\sum_xp(x)log_2\frac{q(x)}{p(x)}
   $$
 
 - Continuous의 경우 다음과 같다.
 
-- $$
+ $$
   -\int p(x)\ln \frac{q(x)}{p(x)} dx
   $$
 
   
 
 - 이를 **KL Divergence**라고 한다.  
-- $KL(p|q) \ne KL(q|p)$
-- $KL(p|q)\ge0$ ($p=q$ 일 때 0 만족)
+- $KL(p\|q) \ne KL(q\|p)$
+- $KL(p\|q)\ge0$ ($p=q$ 일 때 0 만족)
 
 
 
