@@ -5,8 +5,6 @@ categories: study
 use_math: true
 ---
 
-# KL Divergence
-
 <https://www.youtube.com/watch?v=Dc0PQlNQhGY>
 
 해당 영상을 참고해서 정리해봤습니다.
