@@ -95,16 +95,6 @@ $$
 
 - $KL(p\|q)\ge0$ ($p=q$ 일 때 0 만족)
 
-  
-$$
--\int p(x)\ln \frac{q(x)}{p(x)} dx
-$$
-
-  
-
-- 이를 **KL Divergence**라고 한다.  
-- $KL(p\|q) \ne KL(q\|p)$
-- $KL(p\|q)\ge0$ ($p=q$ 일 때 0 만족)
 
 
 
