@@ -2,12 +2,9 @@
 title: "KL Divergence 정리"
 date: 2019-09-23 08:26:28 -0400
 categories: study
-use_math: true
 ---
 
-<https://www.youtube.com/watch?v=Dc0PQlNQhGY>
-
-해당 영상을 참고해서 정리해봤습니다.
+[팡요랩](https://www.youtube.com/watch?v=Dc0PQlNQhGY)의 강의영상을 참고해서 정리해봤습니다.
 
 
 
