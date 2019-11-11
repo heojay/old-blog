@@ -1,7 +1,7 @@
 ---
 title: "네이버 주식 예측"
-date: 2019-11-09 08:26:28 -0400
-categories: review
+date: 2019-11-11 08:26:28 -0400
+categories: data_science
 
 
 ---
@@ -12,7 +12,10 @@ categories: review
 ## 1. 주식 데이터 수집
 
 주식 데이터는 네이버 금융 사이트에서 파싱하기로 하자.  
-출처 : http://blog.quantylab.com/crawling_naverfin_daycandle.html
+
+[출처]: http://blog.quantylab.com/crawling_naverfin_daycandle.html
+
+
 
 
 ```python
@@ -428,7 +431,7 @@ plt.title('네이버 월별 종가')
 
 
 
-![png](../_fig/2019-11-11/output_19_1.png)
+![png](/assets/fig/2019-11-11/output_19_1.png)
 
 
 ### c. Rolling  
@@ -448,7 +451,7 @@ df[['시가']].plot(figsize=(15,7))
 
 
 
-![png](../_fig/2019-11-11/output_21_1.png)
+![png](/assets/fig/2019-11-11/output_21_1.png)
 
 
 
@@ -605,7 +608,7 @@ df['종가'].rolling(7).mean().plot(figsize=(15,7))
 
 
 
-![png](../_fig/2019-11-11/output_23_1.png)
+![png](/assets/fig/2019-11-11/output_23_1.png)
 
 
 이동 평균에는 단순 이동평균, 선형 이동평균, 지수 이동평균 등이 있는데, 이들의 특징은 다음과 같다.  
@@ -631,7 +634,7 @@ df[['종가','종가: 지수 이동 평균']].plot(figsize=(15,7))
 
 
 
-![png](../_fig/2019-11-11/output_25_1.png)
+![png](/assets/fig/2019-11-11/output_25_1.png)
 
 
 ### d. Visualizing  
@@ -651,7 +654,7 @@ df[['거래량','종가']].plot()
 
 
 
-![png](../_fig/2019-11-11/output_27_1.png)
+![png](/assets/fig/2019-11-11/output_27_1.png)
 
 
 이를테면 거래량과 종가는 단위가 크게 다르기 때문에, 같은 plot에 그리면 위와 같이 알아보기 어려운 문제가 있다. 따라서, 새로운 축을 하나 더 설정해줄 필요가 있다.
@@ -669,7 +672,7 @@ df[['거래량','종가']].plot(secondary_y=['거래량'])
 
 
 
-![png](../_fig/2019-11-11/output_29_1.png)
+![png](/assets/fig/2019-11-11/output_29_1.png)
 
 
 다음과 같이 크기를 조절할 수도 있고, 라벨링을 할 수도 있다.  
@@ -690,7 +693,7 @@ plt.show()
 ```
 
 
-![png](../_fig/2019-11-11/output_31_0.png)
+![png](/assets/fig/2019-11-11/output_31_0.png)
 
 
 ## 3. 주식 예측  
@@ -720,7 +723,7 @@ df[['종가', '6M SMA', '12M SMA']].plot(figsize=(12,8))
 
 
 
-![png](../_fig/2019-11-11/output_35_1.png)
+![png](/assets/fig/2019-11-11/output_35_1.png)
 
 
 ### b. Weighted Moving Average
@@ -744,7 +747,7 @@ df[['종가', '6M WMA', '12M WMA']].plot(figsize=(12,8))
 
 
 
-![png](../_fig/2019-11-11/output_38_1.png)
+![png](/assets/fig/2019-11-11/output_38_1.png)
 
 
 ### c. Simple Exponential Smoothing
@@ -773,7 +776,7 @@ test['종가'].plot()
 
 
 
-![png](../_fig/2019-11-11/output_41_1.png)
+![png](/assets/fig/2019-11-11/output_41_1.png)
 
 
 
@@ -813,7 +816,7 @@ plt.legend()
 
 
 
-![png](../_fig/2019-11-11/output_46_1.png)
+![png](/assets/fig/2019-11-11/output_46_1.png)
 
 
 
@@ -900,7 +903,7 @@ plt.legend()
 
 
 
-![png](../_fig/2019-11-11/output_57_1.png)
+![png](/assets/fig/2019-11-11/output_57_1.png)
 
 
 
