@@ -11,9 +11,7 @@ categories: data_science
 
 ## 1. 주식 데이터 수집
 
-주식 데이터는 네이버 금융 사이트에서 파싱하기로 하자.  
-
-[출처]: http://blog.quantylab.com/crawling_naverfin_daycandle.html
+주식 데이터는 네이버 금융 사이트에서 파싱하기로 하자. [출처](http://blog.quantylab.com/crawling_naverfin_daycandle.html)
 
 
 
