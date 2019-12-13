@@ -7,6 +7,7 @@ categories: data_science
 ---
 
 주식 예측 Tutorial을 내 나름대로 재구성해보기로 한다. [참고](https://github.com/midnightradio/tsa-tutorial) 
+
 네이버 핵데이를 위한 선행학습이니 네이버의 주가를 예측해보도록 하자.
 
 ## 1. 주식 데이터 수집
